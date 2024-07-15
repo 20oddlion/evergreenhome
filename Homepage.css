@@ -72,54 +72,27 @@ main > h2 {
 
 }
 
-.photo {
-    grid-column: span 4;
-    padding: 2px 2px;
-    border-radius: 6px;
-    box-shadow: 3px 3px 3px rgba(0,0,0,0.05);
-    background-color: #04e7c1;
-    width: 400px;
-    height: 400px;
+.wrapper {
+  grid-column: span 4;
+  padding: 2px 2px ;
+  border-radius: 6px;
+  box-shadow: 3px 3px 3px rgba(0,0,0,0.05);
+  background-color: #04e7c1;
+  width: 400px;
+  height: 400px;
 }
 
-.photo:hover {
+
+
+
+.image:hover {
   background-color: #333;
   cursor: pointer;
-
-}
-
-
-.center {
-  position: absolute;
-  top: 81%;
-  left: 33%;
-  transform: translate(-100%, -190%);
-  font-size: 30px;
-  background-color: #04e7c1;
-  border-radius: 10px;
+  
 }
 
 
 
-.center1 {
-  position: absolute;
-  top: 81%;
-  left: 53%;
-  transform: translate(-100%, -190%);
-  font-size: 30px;
-  background-color: #04e7c1;
-  border-radius: 10px;
-}
-
-.center2 {
-  position: absolute;
-  top: 81%;
-  left: 77%;
-  transform: translate(-100%, -190%);
-  font-size: 30px;
-  background-color: #04e7c1;
-  border-radius: 10px;
-}
 
 @media screen and (max-width: 960px) {
   main img {
