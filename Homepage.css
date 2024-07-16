@@ -1,3 +1,4 @@
+* {box-sizing: border-box;}
 body {
   margin:0;
   font-family: 'poppins';
@@ -82,17 +83,43 @@ main > h2 {
   height: 400px;
 }
 
+.image {
 
-
-
-.image:hover {
   background-color: #333;
   cursor: pointer;
-  
+   width: 100%;
+  height: auto;
 }
 
+.container {
+  position: relative;
+  width: 100%;
 
+}
+.overlay {
+  position: absolute; 
+ 
+  bottom: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
 
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.content {
+  width: 100%;
+  border: 1px solid;
+}
 
 @media screen and (max-width: 960px) {
   main img {
