@@ -21,17 +21,18 @@
 }
 
 .overlay {
-  position: absolute; 
+  position: relative; 
   bottom: 0; 
   background: rgb(0, 0, 0);
   background: rgba(0, 0, 0, 0.5); /* Black see-through */
   color: #f1f1f1; 
   width: 100%;
+ 
   transition: .5s ease;
   opacity:0;
   color: white;
   font-size: 20px;
-  padding: 20px;
+  padding: 10px;
   text-align: center;
 }
 
@@ -148,4 +149,20 @@
 
 .header-right {
   float: right;
+}
+
+.add-to-cart {
+  display: block;
+  margin: 10px auto;
+  padding: 10px 20px;
+  background-color: #4CAF50; /* Green background */
+  color: white; /* White text */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.add-to-cart:hover {
+  background-color: #45a049; /* Darker green on hover */
 }
